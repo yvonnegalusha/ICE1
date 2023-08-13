@@ -22,8 +22,7 @@ Uncomment and execute the two lines in the next chunk of code.
 
 ```{r}
 
-# library(readr)
-# boston <- read_csv("boston2013.csv")
+
 
 ```
 
@@ -36,12 +35,16 @@ that the output is printed when the notebook is sourced.
 
 ```{r}
 
+
+
 ```
 
 Calculate the square root of `pi`. If you need help, try
 `help("groupGeneric")` and `?pi` in the console (not in the notebook).
 
 ```{r}
+
+
 
 ```
 
@@ -57,11 +60,15 @@ the Environment pane and the value of `x` printed in the notebook.
 
 ```{r}
 
+
+
 ```
 
-In this notebook, calculate `x^2`.
+In this notebook, calculate square of variable `x` value.
 
 ```{r}
+
+
 
 ```
 
@@ -69,6 +76,8 @@ Use the inequality character `<` to determine if the reciprocal of `x`
 is less than 0.1.
 
 ```{r}
+
+
 
 ```
 
@@ -78,6 +87,8 @@ calculate and print the date 173 days ago. Wrap with the `print(...)`
 command.
 
 ```{r}
+
+
 
 ```
 
@@ -90,6 +101,8 @@ package.
 
 ```{r}
 
+
+
 ```
 
 One of the data sets is called `state.x77`. In this notebook, uncomment
@@ -99,7 +112,7 @@ command in later modules):
 
 ```{r}
 
-# states <- as.data.frame(state.x77)
+
 
 ```
 
@@ -108,6 +121,8 @@ notebook. If you need help, try `help("head")`.
 
 ```{r}
 
+
+
 ```
 
 Examine a statistical summary of states by using the command
@@ -115,11 +130,15 @@ Examine a statistical summary of states by using the command
 
 ```{r}
 
+
+
 ```
 
 Examine the structure of states using the command `str(...)`.
 
 ```{r}
+
+
 
 ```
 
@@ -128,6 +147,8 @@ try `help(mean)`. In order to reference the `Population` column of the
 data set, use the `$` operator, i.e., `states$Population`.
 
 ```{r}
+
+
 
 ```
 
@@ -141,6 +162,8 @@ expectancy contains a space, we have to use the back-tick marks.
 
 ```{r}
 
+
+
 ```
 
 # Part 4
@@ -148,19 +171,29 @@ expectancy contains a space, we have to use the back-tick marks.
 In the console, update all of your packages via the `update.packages()`
 command. Such a command would not typically be put in a notebook.
 
+```{r}
 
+
+
+```
 
 Install the `swirl` package in the console. For help, try
 `?install.packages` or use the RStudio Packages window pane. Note that
 commands to install packages are not typically executed from a notebook.
 
+```{r}
 
+
+
+```
 
 In the notebook, make sure the `swirl` package is loaded using the
 `library(...)` command. Note: Such commands *are* usually put in
 notebooks.
 
 ```{r}
+
+
 
 ```
 
@@ -179,6 +212,8 @@ called `df`.
 
 ```{r}
 
+
+
 ```
 
 Use the code `View(df)` from the console to get a spreadsheet-like view
@@ -188,11 +223,15 @@ Examine the structure of `df` using `str(...)`.
 
 ```{r}
 
+
+
 ```
 
 Examine the column names of `df`. Also look at the number of columns.
 
 ```{r}
+
+
 
 ```
 
@@ -200,11 +239,15 @@ Examine the number of rows of `df`.
 
 ```{r}
 
+
+
 ```
 
 Calculate the total memory used by `df` in megabytes.
 
 ```{r}
+
+
 
 ```
 
@@ -216,19 +259,25 @@ just the entry itself (using double square brackets).
 
 ```{r}
 
+
+
 ```
 
 Use the `:` symbol to select rows `7` to `11` and columns `3` to `5`
-into a smaller data frame.
+into a smaller data frame called df2 this display it.
 
 ```{r}
+
+
 
 ```
 
-Now use the `c(...)` command to select rows `7` and `11` (not "7 to 11")
-and columns `state` and `cost`.
+Now use the `c(...)` command (combine function) to select rows `7` and `11` (not "7 to 11")
+and columns `state` and `cost` and save this in df3 then display it.
 
 ```{r}
+
+
 
 ```
 
@@ -240,11 +289,15 @@ extract the column itself as a vector.
 
 ```{r}
 
+
+
 ```
 
 Prepare a histogram of the `cost` column. See `?hist` for help.
 
 ```{r}
+
+
 
 ```
 
@@ -252,6 +305,8 @@ Use `plot(...)` to plot `cost` on `car_age`. Extract the columns each
 using the `$` notation.
 
 ```{r}
+
+
 
 ```
 
@@ -262,19 +317,25 @@ Count the number of `NA` in the `duration_previous` column using
 
 ```{r}
 
+
+
 ```
 
 Count the total number of entries in `df` that are `NA`.
 
 ```{r}
 
+
+
 ```
 
-Reread the data into `df` with: (1) column `customer_ID` as `character`;
+Reread the data into `df4` with: (1) column `customer_ID` as `character`;
 (2) the following definition of the option `na`, which will ensure that
 both `"NA"` and `"0"` are read as `NA`: `c("NA", "0")`
 
 ```{r}
+
+
 
 ```
 
@@ -282,11 +343,15 @@ Now, recount the total number of entries in `df` that are `NA`.
 
 ```{r}
 
+
+
 ```
 
 Also calculate the pecentage of entries in `df` that are `NA`.
 
 ```{r}
+
+
 
 ```
 
@@ -301,6 +366,8 @@ What was the finish time (in minutes) of the fastest runner?
 
 ```{r}
 
+
+
 ```
 
 At what approximate time (relative to the 24-hour clock) did the bomb
@@ -308,13 +375,18 @@ explode?
 
 ```{r}
 
+
+
 ```
 
 # Part 10
 
 Read the SPSS file `spss.sav` into a data frame using the function
-`read.spss` in the package `foreign`.
+`read.spss` in the package `foreign`. The foreign package contains functions that will allow 
+you to import data files from some of the most commonly used statistical software packages such as SAS, Stata and SPSS. 
 
 ```{r}
+
+
 
 ```
