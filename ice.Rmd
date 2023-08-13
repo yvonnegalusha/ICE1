@@ -272,8 +272,9 @@ into a smaller data frame called df2 this display it.
 
 ```
 
-Now use the `c(...)` command (combine function) to select rows `7` and `11` (not "7 to 11")
-and columns `state` and `cost` and save this in df3 then display it.
+Now use the `c(...)` command (combine function) to select rows `7` and `11` 
+(not "7 to 11") and columns `state` and `cost` and save this in df3 then
+display it.
 
 ```{r}
 
@@ -382,9 +383,10 @@ explode?
 # Part 10
 
 Read the SPSS file `spss.sav` into a data frame using the function
-`read.spss` in the package `foreign`. The foreign package contains functions that will allow 
-you to import data files from some of the most commonly used statistical software packages 
-such as SAS, Stata and SPSS. 
+`read.spss` in the package `foreign`. The foreign package contains 
+functions that will allow you to import data files from some of the 
+most commonly used statistical software packages such as SAS, Stata 
+and SPSS. 
 
 ```{r}
 
