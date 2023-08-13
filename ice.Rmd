@@ -383,7 +383,8 @@ explode?
 
 Read the SPSS file `spss.sav` into a data frame using the function
 `read.spss` in the package `foreign`. The foreign package contains functions that will allow 
-you to import data files from some of the most commonly used statistical software packages such as SAS, Stata and SPSS. 
+you to import data files from some of the most commonly used statistical software packages 
+such as SAS, Stata and SPSS. 
 
 ```{r}
 
